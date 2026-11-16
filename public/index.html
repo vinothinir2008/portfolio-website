@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vinothini – Full Stack Developer</title>
+  <meta name="description" content="Portfolio of vinothini, a full stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <nav class="nav">
+    <a href="#top" class="logo">RV<span>.</span></a>
+    <button class="menu-btn" id="openMenu" aria-label="Open menu" aria-controls="menu">&#9776;</button>
+    <ul id="menu">
+      <li><button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button></li>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-hello">Hi, I’m vinothini</p>
+    <h1>I build web apps from the database to the button.</h1>
+    <p class="hero-sub">Full stack developer working with HTML, CSS, JavaScript, Node.js and MongoDB.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn">See my projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact me</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="section">
+    <div class="wrap about">
+      <div class="avatar" aria-hidden="true">RV</div>
+      <div class="about-text">
+        <h2>About me</h2>
+        <p>I’m a full stack development intern who enjoys turning ideas into working products. I write the interface, the API behind it, and the database that stores the data. Replace this paragraph with two or three sentences about you.</p>
+
+        <div class="tabs" role="tablist">
+          <button class="tab-link active" data-tab="skills" role="tab">Skills</button>
+          <button class="tab-link" data-tab="experience" role="tab">Experience</button>
+          <button class="tab-link" data-tab="education" role="tab">Education</button>
+        </div>
+
+        <div class="tab-content active" id="skills">
+          <ul>
+            <li><b>Web design</b> Responsive layouts, Flexbox, Grid</li>
+            <li><b>Frontend</b> HTML, CSS, JavaScript</li>
+            <li><b>Backend</b> Node.js, Express, REST APIs</li>
+            <li><b>Database</b> MongoDB, Mongoose</li>
+          </ul>
+        </div>
+        <div class="tab-content" id="experience">
+          <ul>
+            <li><b>2026</b> Full Stack Development Intern, Thiranex</li>
+            <li><b>2025</b> Personal and college projects (add yours)</li>
+          </ul>
+        </div>
+        <div class="tab-content" id="education">
+          <ul>
+            <li><b>2023 – 2027</b> B.Tech / B.Sc in your branch, your college</li>
+            <li><b>2023</b> Higher secondary, your school</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section section-tint">
+    <div class="wrap">
+      <h2>What I can do for you</h2>
+      <div class="grid services">
+        <article class="service">
+          <h3>Websites</h3>
+          <p>Fast, responsive pages that look right on a phone and on a desktop.</p>
+        </article>
+        <article class="service">
+          <h3>APIs and servers</h3>
+          <p>Node.js and Express back ends with clean, documented routes.</p>
+        </article>
+        <article class="service">
+          <h3>Databases</h3>
+          <p>Data models in MongoDB that store, search and update your content.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="wrap">
+      <h2>My work</h2>
+      <p class="muted">These projects are loaded live from the database.</p>
+      <div class="grid projects" id="projects" aria-live="polite">
+        <p class="muted">Loading projects…</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-dark">
+    <div class="wrap contact">
+      <div>
+        <h2>Let’s talk</h2>
+        <p>Have a project or an opening in mind? Send a message and I’ll reply by email.</p>
+        <p><a href="mailto:you@example.com">you@example.com</a></p>
+        <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+        <p class="socials">
+          <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <a href="resume.pdf" download class="btn">Download my CV</a>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <label>Name <input type="text" name="name" required maxlength="100" autocomplete="name"></label>
+        <label>Email <input type="email" name="email" required maxlength="150" autocomplete="email"></label>
+        <label>Message <textarea name="message" rows="5" required maxlength="2000"></textarea></label>
+        <button type="submit" class="btn">Send message</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 vinothini. Built with HTML, CSS, JavaScript, Node.js and MongoDB.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
